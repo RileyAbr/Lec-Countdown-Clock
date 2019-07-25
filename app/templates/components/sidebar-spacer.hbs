@@ -1,0 +1,12 @@
+<svg {{action "showSidebar"}} height="40" width="30">
+  <polygon points="0,0 30,20 0,40" style="fill:grey;stroke:black;stroke-width:1" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+{{#if this.sidebarIsOpen}}
+    <div {{action "showSidebar"}} class="sidebar-unfocused"></div>
+{{/if}}
+
+{{sidebar classNameBindings="showSidebar:open-sidebar:closed-sidebar"}}
+
+
+{{yield}}

@@ -1,0 +1,41 @@
+& {
+    height: 8vh;
+    background-color: green;
+}
+
+@keyframes fader {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.sidebar-unfocused {
+    //For testing closing the sidebar
+    background: rgba(136, 112, 83, 0.65);
+
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50vh; /* Negative half of height. */
+    margin-left: -50vw; /* Negative half of width. */
+    z-index: 1;
+}
+
+.open-sidebar {
+    background-color: darkcyan;
+    width: 40vw;
+    height: 100vw;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+.close-sidebar {
+    background-color: darkcyan;
+    width: 40vw;
+    height: 100vw;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
