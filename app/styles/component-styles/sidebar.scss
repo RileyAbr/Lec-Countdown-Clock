@@ -1,26 +1,18 @@
-// & {
-//     background-color: darkcyan;
-//     width: 40vw;
-//     height: 100vw;
-//     position: fixed;
-//     top: 0px;
-//     z-index: 2;
-// }
-
-.open-sidebar {
-    background-color: darkcyan;
-    width: 40vw;
-    height: 100vw;
+& {
+    height: 100%;
+    width: 0;
     position: fixed;
-    top: 0px;
-    z-index: 2;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(5, 4, 5, 0.74);
+    border-color: rgba(0, 0, 0, 0.59);
+    border-style: solid;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; 
 }
 
-.close-sidebar {
-    background-color: darkcyan;
-    width: 40vw;
-    height: 100vw;
-    position: fixed;
-    top: 0px;
-    z-index: 2;
-}
+
+
+

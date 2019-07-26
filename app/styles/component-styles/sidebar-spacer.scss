@@ -1,6 +1,9 @@
 & {
     height: 8vh;
     background-color: green;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
 @keyframes fader {
@@ -10,7 +13,7 @@
 
 .sidebar-unfocused {
     //For testing closing the sidebar
-    background: rgba(136, 112, 83, 0.65);
+    //background: rgba(136, 112, 83, 0.65);
 
     width: 100vw;
     height: 100vh;
@@ -22,20 +25,34 @@
     z-index: 1;
 }
 
-.open-sidebar {
-    background-color: darkcyan;
-    width: 40vw;
-    height: 100vw;
-    position: fixed;
-    top: 0px;
-    z-index: 2;
+#sidebar-pulltab {
+    align-self: flex-start;
 }
 
-.close-sidebar {
-    background-color: darkcyan;
-    width: 40vw;
-    height: 100vw;
-    position: fixed;
-    top: 0px;
-    z-index: 2;
+#sidebar-pulltab-triangle {
+    fill: rgba(5, 4, 5, 0.74);
+    stroke: rgba(0, 0, 0, 0.59);
+    stroke-width: 1;
+}
+
+.open-sidebar-pulltab {
+    margin-left: 250px;
+}
+
+.closed-sidebar-pulltab {
+    margin-left: 0px;
+}
+
+.open-sidebar {
+    width: 250px; 
+    border-width: 1px;
+}
+
+.closed-sidebar {
+    width: 0px;
+    border-width: 0px;
+}
+
+#sidebar-pulltab {
+    transition: margin-left .5s;
 }
