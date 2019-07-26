@@ -6,7 +6,6 @@
     <div {{action "showSidebar"}} class="sidebar-unfocused"></div>
 {{/if}}
 
-{{sidebar classNameBindings="showSidebar:open-sidebar:closed-sidebar"}}
-
+<Sidebar class="{{if sidebarIsOpen "open-sidebar" "closed-sidebar"}}"/>
 
 {{yield}}
