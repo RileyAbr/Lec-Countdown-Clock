@@ -1,6 +1,10 @@
+@import "sidebar-variables.scss";
+
 & {
+    //For testing general page layout
+    //background-color: green;
+    
     height: 8vh;
-    background-color: green;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -30,13 +34,13 @@
 }
 
 #sidebar-pulltab-triangle {
-    fill: rgba(5, 4, 5, 0.74);
-    stroke: rgba(0, 0, 0, 0.59);
+    fill: $sidebar-fill-color;
+    stroke: $sidebar-border-color;
     stroke-width: 1;
 }
 
 .open-sidebar-pulltab {
-    margin-left: 250px;
+    margin-left: $sidebar-width;
 }
 
 .closed-sidebar-pulltab {
@@ -44,7 +48,7 @@
 }
 
 .open-sidebar {
-    width: 250px; 
+    width: $sidebar-width; 
     border-width: 1px;
 }
 

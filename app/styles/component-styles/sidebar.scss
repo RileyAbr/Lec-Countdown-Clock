@@ -1,3 +1,5 @@
+@import "sidebar-variables.scss";
+
 & {
     height: 100%;
     width: 0;
@@ -5,8 +7,8 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(5, 4, 5, 0.74);
-    border-color: rgba(0, 0, 0, 0.59);
+    background-color: $sidebar-fill-color;
+    border-color: $sidebar-border-color;
     border-style: solid;
     overflow-x: hidden;
     transition: 0.5s;

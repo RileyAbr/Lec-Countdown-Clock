@@ -1,0 +1,53 @@
+@mixin nimbus-regular {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin nimbus-bold {
+  font-family: nimbus-sans, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;
+}
+
+@mixin nimbus-bold-italic {
+  font-family: nimbus-sans, sans-serif;
+
+  font-weight: 700;
+
+  font-style: italic;
+}
+
+@mixin nimbus-cond-l-regular {
+  font-family: nimbus-sans-condensed, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+@mixin nimbus-cond-l-bold {
+  font-family: nimbus-sans-condensed, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;
+}
+
+@mixin nimbus-ex {
+  font-family: nimbus-sans-extended, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+@mixin nimbus-ex-bold {
+  font-family: nimbus-sans-extended, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;
+}
