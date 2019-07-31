@@ -1,26 +1,39 @@
+@import "nimbus-font-variables.scss";
+
 & {
   width: 34%;
-  background-color: orange;
+  //background-color: orange;
+  @include nimbus-cond-l-bold; //Change to black version
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.clock-wrapper {
+  writing-mode: vertical-lr;
+  width: min-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.left-clock-wrapper {
+  justify-content: left;
 }
 
 #eu-clock {
-  font-size: 140px;
-  transform: rotate(-90deg);
+  font-size: 20.0em;
+  transform: rotate(180deg);
+  margin: 0;
+}
 
-  /* Legacy vendor prefixes that you probably don't need... */
+#eu-date {
+  font-size: 6em;
+  transform: rotate(180deg);
+  margin: 0;
+}
 
-  /* Safari */
-  -webkit-transform: rotate(-90deg);
-
-  /* Firefox */
-  -moz-transform: rotate(-90deg);
-
-  /* IE */
-  -ms-transform: rotate(-90deg);
-
-  /* Opera */
-  -o-transform: rotate(-90deg);
-
-  /* Internet Explorer */
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+#eu-week {
+  font-size: 2em;
+  transform: rotate(180deg);
+  margin: 0;
 }
