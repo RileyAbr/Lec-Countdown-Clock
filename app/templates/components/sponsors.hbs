@@ -1,2 +1,14 @@
-SPONSORS
+<div id="sponsors-wrapper">
+    <h4 class="sponsors-text">{{partnerType}} PARTNERS</h4> 
+    <div class="vertical-line"></div>
+    {{!-- <h4 class="sponsors-text"><span>KIA</span> <span>ALIENWARE</span></h4> --}}
+    {{#each mainLogos as |sponsor|}}
+        {{!-- <h4 class="sponsors-text">{{sponsor}}</h4> --}}
+        <img src={{sponsor}} alt="" class="logo">
+    {{/each}}
+
+
+
+
+</div>
 {{yield}}
